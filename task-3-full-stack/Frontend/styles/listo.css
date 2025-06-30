@@ -1,0 +1,30 @@
+.elementor-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the start of the column */
+  background-color: black; /* Set the background color */
+  padding: 20px; /* Add some padding for aesthetics */
+  color: white; /* Ensure text is readable on a black background */
+  width: 100%; /* Make it responsive */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.elementor-column {
+  width: 100%; /* Make each column take full width */
+  margin-bottom: 10px; /* Add space between each element */
+}
+
+.elementor-widget-wrap {
+  width: 100%; /* Ensure the widget wrap also takes full width */
+}
+
+.title {
+  font-size: 1.5em; /* Adjust the font size of the title */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 5px; /* Add spacing below the title */
+}
+
+.desc {
+  font-size: 1em; /* Adjust the font size for the description */
+  line-height: 1.5; /* Improve readability with proper line height */
+}

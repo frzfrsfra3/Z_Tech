@@ -1,0 +1,223 @@
+/* General card styles */
+/* Container for the tutor details */
+.tutor-details-container {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  .tutor-details-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .tutor-details-container h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph styles */
+  .tutor-details-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Unordered list (ul) styles */
+  .tutor-details-container ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* List item (li) styles */
+  .tutor-details-container ul li {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #007bff; /* Add a colored left border */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect for list items */
+  .tutor-details-container ul li:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+  }
+  
+  /* Styles for the ratings list */
+  .tutor-details-container ul.ratings-list li {
+    border-left-color: #28a745; /* Green border for ratings */
+  }
+  
+  /* Styles for the courses list */
+  .tutor-details-container ul.courses-list li {
+    border-left-color: #007bff; /* Blue border for courses */
+  }
+  
+  /* Strong text inside list items */
+  .tutor-details-container ul li strong {
+    color: #333;
+    font-weight: 600;
+  }
+.user-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  /* Card cover styles */
+  .card-cover {
+    margin-bottom: 2rem;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Avatar wrapper - positioned relative to contain the absolutely positioned avatar */
+  .avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  /* Avatar styling */
+  .avatar {
+    position: relative;
+    background-color: rgba(169, 169, 169, 0.5); /* Light mode */
+    padding: 0.5rem;
+    background-color: rgba(97, 97, 97, 0.5); /* Dark mode */
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white; /* Optional, adds a border for visual emphasis */
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 1.25rem;
+    text-align: center;
+    flex-grow: 1;
+    z-index: 5;
+    position: relative;
+  }
+  
+  /* Card name styling */
+  .card-name {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Card information styling */
+  .card-info {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  /* Courses section */
+  .courses-section {
+    margin-top: 1.5rem;
+  }
+  
+  .courses-section h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .hashtag {
+    background-color: #e9ecef;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+  /* Ratings section */
+  .ratings-section {
+    margin-top: 1.5rem;
+  }
+  
+  .ratings-section h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .average-rating {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 0.5rem;
+  }
+  
+  .ratings-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .rating-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .rating-item:last-child {
+    border-bottom: none;
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rating-comment {
+    font-size: 0.875rem;
+    color: #555;
+    margin: 0;
+  }

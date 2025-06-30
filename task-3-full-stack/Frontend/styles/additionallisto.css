@@ -1,0 +1,41 @@
+.mobile-menu-wrapper {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.mobile-menu-wrapper.open {
+  display: block; /* Show when menu is open */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+
+nav ul li {
+  margin: 20px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.menu-mobile-effect.navbar-toggle span {
+  display: block;
+  background-color: #ffffff;
+  height: 3px;
+  width: 25px;
+  margin: 5px 0;
+}

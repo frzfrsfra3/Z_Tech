@@ -1,0 +1,4 @@
+for running:
+npm run build
+npm run dev 
+it will run on localhost:7000/api/csv/upload
