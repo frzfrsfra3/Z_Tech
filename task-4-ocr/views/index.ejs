@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Floor Plan OCR Tool</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    form { margin-bottom: 2rem; }
+    ul { padding-left: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Upload Floor Plan Image</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required />
+    <button type="submit">Extract Amenities</button>
+  </form>
+
+  <% if (amenities) { %>
+    <h2>Detected Amenities:</h2>
+    <% if (amenities.length > 0) { %>
+      <ul>
+        <% amenities.forEach(a => { %>
+          <li><%= a %></li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>No amenities found.</p>
+    <% } %>
+  <% } %>
+</body>
+</html>
