@@ -49,7 +49,7 @@ The system requires Node.js 18+ and has been tested with:
 4. **Run the Project**
 	```bash 
 	npm run dev```
-5. **Use the API** 
+5. **Use the API localhost:7000/api/csv/upload** 
 	
 	   
 	   
